@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.author             = { "Luke Ward" => "lward@us.ci.org" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/lukeward/cromulent.git", :tag => "#{s.version}" }
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+#   s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files = 'Cromulent/**/*'
   s.exclude_files = "Classes/Exclude"
 end
