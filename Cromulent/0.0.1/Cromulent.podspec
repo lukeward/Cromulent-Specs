@@ -1,14 +1,36 @@
+#
+# Be sure to run `pod lib lint Cromulent.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+#
+
 Pod::Spec.new do |s|
-  s.name         = "Cromulent"
-  s.version      = "0.0.1"
-  s.summary      = "A perfectly cromulent podspec."
-  s.description  = "A test pod. It will be a test to figure out how to set up a private pod."
-  s.homepage     = "https://github.com/lukeward/cromulent"
-  s.license      = "Apache License 2.0"
-  s.author             = { "Luke Ward" => "lward@us.ci.org" }
-  s.platform     = :ios
-  s.source       = { :git => "https://github.com/lukeward/cromulent.git", :tag => "#{s.version}" }
-#   s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.source_files = 'Cromulent/**/*'
-  s.exclude_files = "Classes/Exclude"
+  s.name             = 'Cromulent'
+  s.version          = '0.0.1'
+  s.summary          = 'A perfectly cromulent framework.'
+
+# This description is used to generate tags and improve search results.
+  s.description      = <<-DESC
+A long description of the pod here. Here some more text to make it extra long.
+                       DESC
+
+  s.homepage         = 'https://github.com/lukeward/Cromulent'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'lukeward@hotmail.com' => 'lukeward@hotmail.com' }
+  s.source           = { :git => 'https://github.com/lukeward/Cromulent.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.ios.deployment_target = '8.0'
+
+  s.source_files = 'Cromulent/Classes/**/*'
+  
+  # s.resource_bundles = {
+  #   'Cromulent' => ['Cromulent/Assets/*.png']
+  # }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end
